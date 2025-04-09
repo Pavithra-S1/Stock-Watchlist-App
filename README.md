@@ -1,21 +1,98 @@
-<<<<<<< HEAD
-# new_app
+# 📈 Stock Watchlist App (Flutter)
 
-A new Flutter project.
+This is a stock watchlist Flutter application built as part of a technical interview task. It features a dark-themed UI, BLoC state management, and follows Clean Architecture. All data is handled locally using mock data sources — no API calls are used.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## ✨ Features Implemented (Based on the Task)
 
-A few resources to get you started if this is your first Flutter project:
+### 1. Home Screen with Bottom Navigation Bar
+- The app opens with a Home screen that includes a bottom navigation bar.
+- Tabs include: **Watchlist**, **Orders**, **Portfolio**, **Movers**, and **More**.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 2. Watchlist Screen
+- Contains **multiple watchlist groups** (e.g., NIFTY, BANKNIFTY, etc.) using a top TabBar.
+- Group-specific **symbol lists** with distinct stocks per tab.
+- Integrated **Search bar** that navigates to the Search screen.
+- On **long press** of any symbol, the screen enters **Edit Mode** where:
+  - Symbols can be **reordered using drag-and-drop**
+  - All **edge cases** are handled, including:
+    - Switching tabs during edit mode
+    - Clicking search while editing
+    - Properly exiting edit mode
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-=======
-# stock-watchlist-app
-Stock watchlist app built with Flutter using BLoC &amp; Clean Architecture
->>>>>>> 3425e25da8723ac3cb579e8075a88dd22a3de93e
+### 3. Search Screen
+- Displays a list of **default stock symbols**
+- Live **search and filtering** based on input
+- Allows adding symbols to the current group using a ➕ icon
+- Prevents adding duplicates
+
+### 4. Manage Watchlist Screen
+- Users can:
+  - **Reorder** entire watchlist groups
+  - **Rename** watchlist titles
+  - **Delete** watchlists
+  - Option to **customize the view** layout (placeholder implemented)
+
+### 5. Local Storage (Mock)
+- All watchlists and stock data are stored in memory via mock data sources
+- No backend/API is used
+- Data simulates persistence (can be extended using SharedPreferences or Hive)
+
+### 6. BLoC and Clean Architecture
+- BLoC is used throughout the app for scalable and testable state management
+- Code is structured using **Clean Architecture**:
+  - `data`, `domain`, and `presentation` layers
+  - Supports scalability and maintainability
+
+---
+
+
+
+## 📁 Project Structure
+
+```text
+lib/
+├── core/
+│   ├── constants/
+│   └── services/
+├── features/
+│   ├── home/
+│   │   └── presentation/
+│   │       └── pages/
+│   ├── search/
+│   │   ├── data/
+│   │   ├── domain/
+│   │   └── presentation/
+│   │       └── pages/
+│   └── watchlist/
+│       ├── data/
+│       ├── domain/
+│       └── presentation/
+├── main.dart
+```
+
+---
+
+### Prerequisites
+
+- Flutter SDK (3.x or higher)
+- Dart SDK
+- VS Code or Android Studio
+
+### Run the App
+
+```bash
+flutter pub get  
+flutter run
+```
+
+
+### Getting Started
+Prerequisites
+Flutter SDK (3.x or higher)
+Dart SDK
+Android Studio or VS Code
+
+
+   
