@@ -1,3 +1,4 @@
+
 # 📈 Stock Watchlist App (Flutter)
 
 This is a stock watchlist Flutter application built as part of a technical interview task. It features a dark-themed UI, BLoC state management, and follows Clean Architecture. All data is handled locally using mock data sources — no API calls are used.
@@ -93,6 +94,14 @@ Prerequisites
 Flutter SDK (3.x or higher)
 Dart SDK
 Android Studio or VS Code
+
+
+### Screenshots of App's UI
+
+
+![WhatsApp Image 2025-04-09 at 6 13 29 PM (1)](https://github.com/user-attachments/assets/f86be99a-3e40-4a44-918a-d5fce20c96f8)
+![WhatsApp Image 2025-04-09 at 6 13 29 PM (2)](https://github.com/user-attachments/assets/61d3ce9d-4d06-440a-a0aa-ecc58485d799)
+![WhatsApp Image 2025-04-09 at 6 13 29 PM](https://github.com/user-attachments/assets/b8e6a776-ab64-4cbe-be17-644311ae8ce9)
 
 
    
